@@ -2,6 +2,10 @@ from aiogram import types
 from log_writer import logger
 
 class GreetingService:
+    """
+    Класс GreetingService отвечает за обработку простых начальных команд бота, таких как /start и /help.
+    """
+
 
     HELP_TEXT = """
     Доступные команды:

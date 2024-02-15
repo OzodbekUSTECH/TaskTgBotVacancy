@@ -4,6 +4,9 @@ from aiogram import types
 from log_writer import logger
 
 class ConversionService:
+    """
+    Класс ConversionService отвечает за конвертацию валют.
+    """
 
     async def convert_command(self, message: types.Message):
         logger.info(f"Пользователь {message.from_user.id}: {message.from_user.full_name} запустил конвертацию валют")
